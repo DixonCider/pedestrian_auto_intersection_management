@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{sectsty}
+\sectionfont{\fontsize{14}{15}\selectfont}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\DeclareMathOperator{\sign}{sign}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{enumitem}
+
+\title{CSIE 5452, Fall 2018 — Final Project Proposal}
+\author{Ching-Yuan Bai B05502055 \\Pin-Yen Huang B05902057}
+\date{October 23, 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Members}
+\begin{tabular}{ |c|c|c| }
+  \hline
+  Name & Student ID & Emails \\
+  \hline
+  \hline
+  Pin-Yen Huang & B05902057 & b05902057@ntu.edu.tw \\
+  \hline
+  Ching-Yuan Bai & B05502055 & b05502055@ntu.edu.tw \\
+  \hline
+\end{tabular}
+\section{Type}
+\begin{tabular}{ |c|c|c|c| }
+  \hline
+  Type & Survey & Implementation & Research \\
+  \hline
+  \hline
+  \begin{tabular}{@{}c@{}}Estimated \\ Percentage\end{tabular} & 20\%  & 40\%  & 40\% \\
+  \hline
+\end{tabular}
+\section{Title}
+Pedestrian-focused autonomous intersection management
+\section{Problem Description}
+Attempt to devise an effective and efficient framework to incorporate pedestrain into autonomous intersection management.
+\section{Reason to select the problem}
+According to survey, there are currently no existing autonomous intersection management framework that considers the priority of pedestrain.
+However, the time for pedestrains to wait at a crossroad should not be neglected as it inflicts no less social cost compared with automobiles.
+Thus, a method to prioritized the pedestrians crossing intersections  while minimizing the negative effect on traffic flow is an urgent demand.
+\section{Rough Schedule}
+\begin{itemize}
+  \item Nov, 18: Complete survey with full knowledge of state-of-the-art autonomous intersection management methods.
+    Implement rudimentary model and experiment with toy dataset.
+  \item Dec, 18: Obtain real world data to experimant and revise the model accordingly.
+  \item Jan, 19: Complete the remaining pieces of the framework. Prepare for report. 
+\end{itemize}
+\section{Expected Results}
+We expect to propose a novel method to incorporate pedestrains into the autonomous intersection management framework. 
+It should be able to be theoretically provable better than conventional methods (worse case analysis) and follow the same trend in simulation as well. 
+We plan to eveluate the feasibility of implementing it in real life situations.
+\section{Any Double Assignment}
+None.
+\section{Any Completed Work}
+None.
+\section{Optional Questions}
+\begin{itemize}
+    \item What are the references that you want to survey?\\
+      Journal and paper related to autonomous intersection management on Google Scholar.     
+    \item How do you plan to survey the references (detailed or quick)?\\
+      We plan to first go through the abstract and introduction of each paper and journal then dive deep into the more relevant ones.
+    \item Is there any existing public implementation?
+    \item How to you get the input data?
+    \item What language do you want to use?\\
+      Python.
+    \item What are the references that you want to consider or compare with?\\
+      We will build our model on top of the legacy by K. Dresner and P. Stone et al. (2008) and compare with the original version as baseline performance evalutation.
+      Upon further maturity of the new model, we can compare with more advanced models such as the multi-intersection optimized model proposed by M Hausknecht et al..
+      Alternative benchmarking can be done by comparing with other groups participating in this course with similar project topic.
+    \item What are the possible directions that you can get improvement over existing work?
+      \begin{itemize}
+        \item Incorporate pedestrians into autonomous intersection management
+        \item Utilize pedestrains to improve the autonomous intersection managing experience
+        \item Possibly incorporate bicycles or anything traveling with different speed than automobiles 
+        \item Propose solution to multiple targets with largely varying speed sharing the same route
+      \end{itemize}
+\end{itemize}
+
+\end{document}

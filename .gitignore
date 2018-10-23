@@ -1,3 +1,6 @@
+# Vim stuff
+*.un~
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
